@@ -1,0 +1,25 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "atolea-jewelry-live"
+client_id = "c37a4294bd0f4bc47438e379e971cd20"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://dddemo.net/php/2023/bombayshirtstage/generate_token.php",
+  "https://shopify.dev/apps/default-app-home/api/auth"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "test-store-for-upsell.myshopify.com"
